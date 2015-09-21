@@ -1,0 +1,30 @@
+extends layout
+
+block content
+
+    // Wrapper
+    #wrapper
+
+        // MENU
+        #menu
+            p
+                | <a href="/">Home</a> 
+                br
+                | <a href="./newfeedback">Write Feedback</a> 
+                br
+                | <a href="./feedbacklist">Feedback List</a> 
+        // /MENU
+
+        // FEEDBACK LIST
+        h2 Feedback List
+        #feedbackList
+            table
+                thead
+                    th Name
+                    th Email
+                    th Feedback
+                    th Delete?
+                tbody
+        // /FEEDBACK LIST
+
+    // /WRAPPER

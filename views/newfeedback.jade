@@ -1,0 +1,33 @@
+extends layout
+
+block content
+
+    // Wrapper
+    #wrapper
+
+        // MENU
+        #menu
+            p
+                | <a href="/">Home</a> 
+                br
+                | <a href="./newfeedback">Write Feedback</a> 
+                br
+                | <a href="./feedbacklist">Feedback List</a> 
+        // /MENU
+
+        // ADD FEEDBACK
+        h2 Write your feedback
+        #sendFeedback
+            fieldset
+                input#inputName(type='text', placeholder='Name', size='35')
+                br
+                br
+                input#inputEmail(type='email', placeholder='Email', size='35')
+                br
+                br
+                textarea#inputFeedbackArea(placeholder='Enter your feedback', name='feedback', rows='4', cols='50')
+                br
+                button#btnSendFeedback Send
+        // /ADD FEEDBACK
+
+    // /WRAPPER
