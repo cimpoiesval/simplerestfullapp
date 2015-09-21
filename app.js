@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/restapp');
+//var db = monk('localhost:27017/restapp');
+var db = monk('mongodb://testuserdb:testuserpwd@ds051923.mongolab.com:51923/heroku_xq7m8rnp');
 
 var routes = require('./routes/index');
 var feedbacks = require('./routes/feedbacklist');
